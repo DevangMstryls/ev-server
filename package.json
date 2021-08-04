@@ -90,6 +90,7 @@
     "mochatest:security": "cross-env TS_NODE_FILES=true mocha --no-parallel test/**/SecurityTest.ts",
     "mochatest:registrationToken": "cross-env TS_NODE_FILES=true mocha --no-parallel test/**/RegistrationTokenTest.ts",
     "mochatest:company": "cross-env TS_NODE_FILES=true mocha --no-parallel test/**/CompanyOrgTest.ts",
+    "check:i18n": "cross-env TS_NODE_FILES=true ts-node-dev --files test/I18nChecker.ts",
     "mochatest:create:utbilling": "cross-env TS_NODE_FILES=true TENANT_FILTER=utbilling mocha --no-parallel test/**/ContextBuilderRunner.ts",
     "coverage": "nyc report --reporter=lcov",
     "coverage:html": "nyc report --reporter=html",
